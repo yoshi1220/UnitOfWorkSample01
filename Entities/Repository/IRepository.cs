@@ -4,6 +4,10 @@ using System.Linq.Expressions;
 
 namespace Entities
 {
+    /// <summary>
+    /// Repositoryインターフェイス
+    /// </summary>
+    /// <typeparam name="TEntity">モデルを指定する</typeparam>
     public interface IRepository<TEntity> where TEntity : class
     {
         TEntity Get(int id);

@@ -9,15 +9,21 @@ using Services;
 
 namespace UnitOfWorkSample01
 {
+    /// <summary>
+    /// RepositoryパターンでのPersistent Frameworkの隠蔽
+    /// Unit of workパターンでのトランザクション管理
+    /// ビジネスロジックはService層に分離
+    /// </summary>
     class Program
     {
-       
         static void Main(string[] args)
         {
             IUserService _userService = new UserService();
 
+            //ユーザーデータの取得
             var allUsers = _userService.GetAllData();
 
+            //ユーザーデータの出力
             foreach(var user in allUsers)
             {
                 Console.WriteLine($"UserId: {user.UserId}, UserName: {user.UserName}");

@@ -2,7 +2,6 @@
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 
-
 namespace Repositories
 {
     public  class PlutoContext : DbContext
