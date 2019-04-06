@@ -10,6 +10,8 @@ using Services;
 namespace UnitOfWorkSample01
 {
     /// <summary>
+    /// データベースアクセスのサンプル
+    /// 
     /// RepositoryパターンでのPersistent Frameworkの隠蔽
     /// Unit of workパターンでのトランザクション管理
     /// ビジネスロジックはService層に分離
