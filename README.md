@@ -1,5 +1,5 @@
 # UnitOfWorkSample01
-
+Entity Framework Coreを利用して、  
 RepositoryパターンとUnit of workパターンでのDBアクセスのサンプル  
 
 ## 環境
